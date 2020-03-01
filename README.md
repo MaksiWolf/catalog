@@ -1,1 +1,5 @@
 # catalog
+
+Фреймворк Phalcon 3.4.4
+
+Таблица: CREATE TABLE `catalog`.`product` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(100) NULL DEFAULT NULL , `description` VARCHAR(200) NULL DEFAULT NULL , `text` VARCHAR(200) NULL DEFAULT NULL , `img` LONGBLOB NULL DEFAULT NULL , `category` VARCHAR(200) NULL DEFAULT NULL , `status` BOOLEAN NULL DEFAULT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
