@@ -1,0 +1,31 @@
+<head>
+    <title></title>
+<style>
+    p {
+        color: #000; /* Цвет текста */
+        background: #e7ee00; /* Цвет фона */
+        width: 1200px;
+        font-size: 17pt;
+        text-align: center;
+    }
+</style>
+</head>
+
+<?php
+
+foreach($vars as $key => $value){
+    echo '<p>'.' Название: ';
+    print_r($value->name); echo '  Описание: ';
+    print_r($value->description); echo ' Полный текст: ';
+    print_r($value->text); echo ' Картинка: ';
+    if(!empty($value->img)) {
+        print_r(
+            '<img src="data:image/jpeg;base64, '.base64_encode($value->img).'" alt = "" width="130" height="130">'
+        );
+    }
+    echo ' Категория: ';
+    print_r($value->category); echo '</p>';
+}
+
+?>
+

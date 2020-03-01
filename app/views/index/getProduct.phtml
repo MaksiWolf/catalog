@@ -1,0 +1,87 @@
+
+<head>
+    <title>catalog</title>
+    <style>
+        body{
+            background: white;
+            font-family: 'Helvetica', 'Lucida Grande', 'Arial', sans-serif;
+        }
+
+        .form{
+            height: 170px;
+            width: 450px;
+            margin: 160px auto;
+        }
+
+        form{
+            border-radius: 5px;
+            height: 100%;
+            width: 100%;
+
+            background: #777;
+        }
+        form label{
+            display: inline-block;
+            font-size: 13px;
+            color: white;
+        }
+        input[type="checkbox"] {
+            height: 15px;
+            width: 15px;
+        }
+        form input{
+            display: inline-block;
+            margin: 5px 10px 10px 15px;
+            width: 250px;
+            background: #111;
+            outline: 1px solid #333;
+            border: 1px solid #000;
+            padding: 5px;
+            color: white;
+            font-size: 12px;
+        }
+        .btn {
+            display: inline-block;
+            background: black;
+            color: #fff;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        .bt{
+            height: 150px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="bt">
+    <a href="../index" class="btn">На главную</a> &nbsp;
+</div>
+
+
+<div class="form">
+
+<form action="../Crud/readProduct" method="post" target="_blank">
+    <br/>
+    <input list="type" name="type">
+    <datalist id="type">
+        <option value="по категории">
+        <option value="по имени">
+        <option value="все продукты">
+    </datalist>
+    <label for="type">Просмотр продуктов по:</label><br/>
+
+
+    <input name="name" type="text"/>
+    <label for="name">Название</label><br/><br/>
+    <input type="submit" value="Посмотреть продукты"/>
+
+</form>
+</div>
+
+</body>
